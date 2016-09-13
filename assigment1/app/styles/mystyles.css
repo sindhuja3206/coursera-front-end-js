@@ -94,3 +94,17 @@ body {
   position: absolute;
   right: 0px;
 }
+
+.comments-sort {
+  color: #777;
+  padding-left: 60px;
+}
+.comments-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.comments-title {
+  font-size: 18px;
+  font-weight: bold;
+}
