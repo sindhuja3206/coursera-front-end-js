@@ -32,10 +32,10 @@ gulp.task('default', ['clean'], function() {
 });
 
 gulp.task('usemin',['jshint'], function () {
-  return gulp.src('./app/menu.html')
+  return gulp.src('./app/**/*.html')
   .pipe(usemin({
-    css:[minifycss(),rev()],
-    js: [ngannotate(), uglify(),rev()]
+    css:[minifycss(), rev()],
+    js: [ngannotate(), uglify(), rev()]
   }))
   .pipe(gulp.dest('dist/'))
   .pipe(browserSync.reload({stream: true}))
@@ -75,7 +75,7 @@ gulp.task('browser-sync', ['default'], function () {
   browserSync.init({
     server: {
       baseDir: "dist",
-      index: "menu.html"
+      index: "index.html"
     },
   });
 });
