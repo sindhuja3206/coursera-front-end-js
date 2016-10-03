@@ -17,3 +17,17 @@ sudo apt-get install npm
 
 npm install -g bower
 ```
+
+For running json-server install it globally with the following command:
+
+```
+sudo npm install json-server -g
+```
+
+Run it:
+
+```
+json-server --watch db.json
+```
+
+If you want json-server to serve static content (html, css, js), copy it in the `public` folder.
