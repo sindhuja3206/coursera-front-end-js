@@ -55,7 +55,7 @@ npm install phantomjs karma-phantomjs-launcher karma-chrome-launcher --save-dev
 bower install angular-mocks -S
 ```
 
-To use Chromium to run Karma tests run the following command:
+To use Chromium to run tests type the following command:
 
 ```
 export CHROME_BIN=/usr/bin/chromium-browser
@@ -65,4 +65,17 @@ In the `test` folder run the following command:
 
 ```
 karma start karma.conf.js
+```
+
+For end-to-end testing with Protractor type:
+
+```
+sudo npm install protractor -g
+sudo webdriver-manager update
+```
+
+Type the following to run end-to-end tests:
+
+```
+protractor protractor.conf.js
 ```
